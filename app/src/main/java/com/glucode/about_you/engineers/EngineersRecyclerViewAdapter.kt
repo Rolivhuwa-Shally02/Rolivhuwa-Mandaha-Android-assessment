@@ -31,6 +31,30 @@ class EngineersRecyclerViewAdapter(
             }
             //TODO - set profile picture
 //            statusIcon.setDrawable(item.icon)
+            //binding.profileImage.setImageResource(engineer.defaultImageName.toInt())
+            try {
+                val imageResId = engineer.defaultImageName.toInt()
+                binding.profileImage.setImageResource(imageResId)
+            } catch (_: NumberFormatException) {
+            }
+            binding.bugValue.text = engineer.quickStats.bugs.toString()
+            binding.yearsValue.text = engineer.quickStats.years.toString()
+            binding.coffeeValue.text = engineer.quickStats.coffees.toString()
+
         }
     }
+ fun sortByCoffee(){
+     engineers = engineers.sortedBy { it.quickStats.coffees }
+     notifyDataSetChanged()
+ }
+    fun sortByBugs(){
+        engineers = engineers.sortedBy { it.quickStats.bugs }
+        notifyDataSetChanged()
+    }
+
+    fun sortByYears(){
+        engineers = engineers.sortedBy { it.quickStats.years }
+        notifyDataSetChanged()
+    }
+    // It is worthy to note that diffUtil would be a great substitute since notifyDataSetChanged is deprecated
 }

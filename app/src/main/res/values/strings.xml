@@ -10,4 +10,7 @@
 
     <!--About-->
     <string name="about_screen_title">About</string>
+    <string name="years">Years</string>
+    <string name="coffees">Coffees</string>
+    <string name="bugs">Bugs</string>
 </resources>

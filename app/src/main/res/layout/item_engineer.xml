@@ -48,4 +48,90 @@
         app:layout_constraintTop_toBottomOf="@id/name"
         tools:text="Developer role" />
 
+    <TextView
+        android:id="@+id/years"
+        style="@style/Material.Body1.Medium.Dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintTop_toBottomOf="@id/role"
+        android:text="@string/years"
+        tools:text="Years" />
+
+    <TextView
+        android:id="@+id/years_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintTop_toBottomOf="@id/years"
+        tools:text="Years" />
+
+    <TextView
+        android:id="@+id/coffee"
+        style="@style/Material.Body1.Medium.Dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/years"
+        app:layout_constraintTop_toBottomOf="@id/role"
+        android:text="@string/coffees"
+        tools:text="Coffees" />
+
+    <TextView
+        android:id="@+id/coffee_value"
+        style="@style/Material.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/years_value"
+        app:layout_constraintTop_toBottomOf="@id/coffee"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Coffee" />
+
+    <TextView
+        android:id="@+id/bug"
+        style="@style/Material.Body1.Medium.Dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/coffee"
+        app:layout_constraintTop_toBottomOf="@id/role"
+        android:text="@string/bugs"
+        tools:text="Bugs" />
+
+    <TextView
+        android:id="@+id/bugValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/coffee_value"
+        app:layout_constraintTop_toBottomOf="@id/bug"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Years" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
